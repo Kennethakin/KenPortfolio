@@ -15,8 +15,8 @@ const Contact = () => {
           transition={{ duration: 0.5 }}
           className="space-y-8 text-center md:text-left"
         >
-          <h2 className="text-4xl font-extrabold leading-tight">Let’s Connect</h2>
-          <p className="text-lg max-w-sm">
+          <h2 className="text-4xl font-extrabold leading-tight text-black">Let’s Connect</h2>
+          <p className="text-lg max-w-sm text-black">
             Whether it's collaboration, hiring, or just saying hi — I'm always open to great conversations.
           </p>
 
@@ -25,7 +25,7 @@ const Contact = () => {
               href="mailto:kennethakinyelure@gmail.com"
               className="flex items-center gap-3 hover:underline justify-center md:justify-start"
             >
-              📧 <span>Send Email</span>
+              📧 <span className="text-black">Send Email</span>
             </a>
             <a
               href="https://www.linkedin.com/in/kennethakin"
@@ -33,7 +33,7 @@ const Contact = () => {
               rel="noreferrer"
               className="flex items-center gap-3 hover:underline justify-center md:justify-start"
             >
-              💼 <span>LinkedIn Profile</span>
+              💼 <span className="text-black">LinkedIn Profile</span>
             </a>
             <a
               href="https://github.com/KennethAkin"
@@ -41,7 +41,7 @@ const Contact = () => {
               rel="noreferrer"
               className="flex items-center gap-3 hover:underline justify-center md:justify-start"
             >
-              🧑‍💻 <span>GitHub Portfolio</span>
+              🧑‍💻 <span className="text-black">GitHub Portfolio</span>
             </a>
           </div>
         </motion.div>

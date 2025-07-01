@@ -35,13 +35,14 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Hamburger */}
-        <button
-          className="md:hidden text-2xl text-blue-900"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle Menu"
-        >
-          ☰
-        </button>
+       <button
+  className="md:hidden text-3xl text-blue-900 transition-transform duration-300"
+  onClick={() => setIsOpen(!isOpen)}
+  aria-label="Toggle Menu"
+>
+  {isOpen ? "✖" : "☰"}
+</button>
+
       </div>
 
       {/* Mobile Menu */}
