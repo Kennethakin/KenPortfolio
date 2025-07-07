@@ -4,7 +4,7 @@ type ProjectCardProps = {
   title: string;
   description: string;
   liveUrl: string;
-  repoUrl: string;
+  repoUrl?: string; // Make it optional
 };
 
 const ProjectCard = ({ title, description, liveUrl, repoUrl }: ProjectCardProps) => {
@@ -17,8 +17,24 @@ const ProjectCard = ({ title, description, liveUrl, repoUrl }: ProjectCardProps)
       <h3 className="text-2xl font-bold mb-3">{title}</h3>
       <p className="text-gray-700 mb-4">{description}</p>
       <div className="flex space-x-4">
-        <a href={liveUrl} target="_blank" rel="noopener noreferrer" className="text-blue-600 font-medium hover:underline">🔗 Live</a>
-        <a href={repoUrl} target="_blank" rel="noopener noreferrer" className="text-gray-800 font-medium hover:underline">💻 Code</a>
+        <a
+          href={liveUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 font-medium hover:underline"
+        >
+          🔗 Live
+        </a>
+        {repoUrl && (
+          <a
+            href={repoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-800 font-medium hover:underline"
+          >
+            💻 Code
+          </a>
+        )}
       </div>
     </motion.div>
   );

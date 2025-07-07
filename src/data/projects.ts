@@ -17,4 +17,16 @@ export const projects = [
     repoUrl: "https://github.com/Kennethakin/Campus_Resource_Exchange",
     description: "A platform for students to share and access educational resources.",
   },
+  {
+    title: "DFC Calabar Website",
+    liveUrl: "https://www.dfccalabar.org.ng",
+    repoUrl: "",
+    description: "A responsive WordPress website built for the Drug Free & Quality Control CDS group.",
+  },
+  {
+    title: "ClimXus Website",
+    liveUrl: "https://www.climxus.org.ng",
+    repoUrl: "",
+    description: "A clean, accessible WordPress site for a climate-focused nonprofit, designed with Elementor and optimized for performance.",
+  },
 ];

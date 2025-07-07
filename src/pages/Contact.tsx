@@ -17,7 +17,7 @@ const Contact = () => {
         >
           <h2 className="text-4xl font-extrabold leading-tight text-black">Let’s Connect</h2>
           <p className="text-lg max-w-sm text-black">
-            Whether it's collaboration, hiring, or just saying hi — I'm always open to great conversations.
+            Whether it's collaboration, hiring, or just saying hi , I'm always open to great conversations.
           </p>
 
           <div className="space-y-4 text-lg">
@@ -69,43 +69,46 @@ const Contact = () => {
               onSubmit={() => setSubmitted(true)}
               className="space-y-6"
             >
-              <div className="relative">
+              {/* Name */}
+              <div className="flex flex-col">
+                <label htmlFor="name" className="text-sm font-medium mb-1">
+                  Name
+                </label>
                 <input
+                  id="name"
                   type="text"
                   name="name"
                   required
-                  className="peer w-full border-b-2 border-gray-300 focus:border-blue-600 focus:outline-none py-2 placeholder-transparent"
-                  placeholder="Name"
+                  className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-600"
                 />
-                <label className="absolute left-0 top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-gray-500">
-                  Your Name
-                </label>
               </div>
 
-              <div className="relative">
+              {/* Email */}
+              <div className="flex flex-col">
+                <label htmlFor="email" className="text-sm font-medium mb-1">
+                   Email
+                </label>
                 <input
+                  id="email"
                   type="email"
                   name="email"
                   required
-                  className="peer w-full border-b-2 border-gray-300 focus:border-blue-600 focus:outline-none py-2 placeholder-transparent"
-                  placeholder="Email"
+                  className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-600"
                 />
-                <label className="absolute left-0 top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-gray-500">
-                  Your Email
-                </label>
               </div>
 
-              <div className="relative">
+              {/* Message */}
+              <div className="flex flex-col">
+                <label htmlFor="message" className="text-sm font-medium mb-1">
+                  Message
+                </label>
                 <textarea
+                  id="message"
                   name="message"
                   rows={4}
                   required
-                  className="peer w-full border-b-2 border-gray-300 focus:border-blue-600 focus:outline-none py-2 placeholder-transparent"
-                  placeholder="Your Message"
+                  className="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-600"
                 />
-                <label className="absolute left-0 top-2 text-gray-500 text-sm transition-all peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:top-2 peer-focus:text-sm peer-focus:text-gray-500">
-                  Message
-                </label>
               </div>
 
               <button
